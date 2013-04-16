@@ -1,4 +1,25 @@
-MiniTriangleLanguageImplementation
+Mini Triangle Language Implementation
 ==================================
+Wilson Giese - giese.wilson@gmail.com
 
-Scanner(Lexer), Parser, and Code Generator for the "MiniTriangle" language. 
+About
+-----
+
+This is a compiler for the "MiniTriangle" language. MiniTriangle is a small language I used to become famailiar with the ideas of Programming Language implementation. This language is compiled to Python Bytecode, and the compiler will create fully executable ".pyc" files which will run on the Python stack machine. 
+
+
+Features
+--------
+- Integer type(with arbitrary precision thanks to Python's stack machine). 
+- Function definitions/calls
+- Control structures(If-else, while loops, etc...)
+- Precedence
+- [EBNF](https://github.com/WilsonGiese/MiniTriangleLanguageImplementation/EBNF)
+
+
+Compiling and Running MiniTriangle
+----------------------------------
+    $ python codegen.py <YourFile>.mt
+    $ pyhon <YourFile>.pyc
+    
+The [Byteplay](https://code.google.com/p/byteplay/) library is required to compile this MiniTriangle, but once compiled it is not needed to run the PYC files. 
