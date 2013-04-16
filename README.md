@@ -14,7 +14,7 @@ Features
 - Function definitions/calls
 - Control structures(If-else, while loops, etc...)
 - Precedence
-- [EBNF](https://github.com/WilsonGiese/MiniTriangleLanguageImplementation/EBNF)
+- [EBNF](https://github.com/WilsonGiese/MiniTriangleLanguageImplementation/blob/master/EBNF)
 
 
 Compiling and Running MiniTriangle
