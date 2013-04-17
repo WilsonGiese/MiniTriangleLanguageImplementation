@@ -1,0 +1,53 @@
+Program            ::=  Command
+
+Command            ::=  single-Command ( single-Command )* 
+                    |   [ func-Declaration ( func-Declaration )* ]
+
+single-Command     ::=  V-name ':=' Expression ';'
+                    |   call-command';'
+                    |   if Expression then single-Command
+                           else single-Command
+                    |   while Expression do single-Command
+                    |   let Declaration in single-Command
+                    |   begin Command end
+                    |   return Expression ';'
+
+Expression         ::=  Ter-Expression ( Oper-Ter Ter-Expression )* 
+Ter-Expression     ::=  Sec-Expression ( Oper-Sec -Expression )* 
+Sec-Expression     ::=  primary-Expression ( Oper-Pri primary-Expression )*
+
+primary-Expression ::=  Integer-Literal
+                    |   V-name
+                    |   Operator primary-Expression
+                    |   '(' Expression ')'
+                    |   call-commmand
+
+V-name             ::=  Identifier
+
+Declaration        ::=  single-Declaration ( single-Declaration )*
+
+single-Declaration ::=  const Identifier ~ Expression ';'
+                    |   var Identifier : Type-denoter ';'
+                    |   func-Declaration
+
+func-Declaration   ::= func Identifier '(' parameter-list ')' ':' Type-denoter single-Command
+
+parameter-list     ::=  Identifier ':' 'Type-denoter' ( ',' Identifier : Type-denoter )*
+
+call-command       ::=  Indetifier '(' parameter-list ')'
+
+Type-denoter       ::=  Identifier
+
+
+Operator           ::=  '+' | '-' | '*' | '/' | '<' | '>' | '=' | '\'
+Oper-Pri           ::=  '*' | '/' | '\'
+Oper-Sec           ::=  '+' | '-'
+Oper-Ter           ::=  '<' | '>' | '='
+
+Identifier         ::=  Letter ( Letter | Digit )*
+
+Integer-Literal    ::=  Digit | Integer-Literal Digit
+
+Comment            ::=  '!' Graphic* <eol>
+
+Character          ::=  Graphic
