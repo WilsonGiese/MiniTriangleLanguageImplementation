@@ -1,7 +1,8 @@
+#!/usr/bin/env python
 #
-# Wilson Giese : 2012-02-25
+# Parser for Mini Triangle
 #
-# Parser and AST builder for Mini-Triangle.
+# Author: Wilson Giese
 #
 
 import ast as ast

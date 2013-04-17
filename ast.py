@@ -1,4 +1,9 @@
-# ast.py - Abstract Syntax Tree for Mini Triangle
+#!/usr/bin/env python
+#
+# AST nodes for Mini Triangle
+#
+# Author: Wilson Giese
+#
 
 
 class AST(object):

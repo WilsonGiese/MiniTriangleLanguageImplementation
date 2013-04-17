@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+#
+# Code generator for Mini Triangle
+#
+# Author: Wilson Giese 
+#
+
 from byteplay import *
 from types import CodeType, FunctionType
 

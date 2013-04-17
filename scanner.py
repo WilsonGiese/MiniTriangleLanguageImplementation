@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 #
-# Scanner for Mini Triangle
+# Scanner(Lexer) for Mini Triangle
 #
-# Author: Wilson Giese : 2013-02-11
-# Project 1, part A
+# Author: Wilson Giese
 #
 
 import cStringIO as StringIO
