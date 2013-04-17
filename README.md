@@ -23,3 +23,9 @@ Compiling and Running MiniTriangle
     $ pyhon <YourFile>.pyc
     
 The [Byteplay](https://code.google.com/p/byteplay/) library is required to compile this language, but once compiled it is not needed to run the PYC files. 
+
+
+Features to Implement
+---------------------
+- Types: Floating point type, char type, and array type. 
+- Method to include and link external files/libraries
