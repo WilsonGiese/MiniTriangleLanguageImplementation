@@ -22,4 +22,4 @@ Compiling and Running MiniTriangle
     $ python codegen.py <YourFile>.mt
     $ pyhon <YourFile>.pyc
     
-The [Byteplay](https://code.google.com/p/byteplay/) library is required to compile this MiniTriangle, but once compiled it is not needed to run the PYC files. 
+The [Byteplay](https://code.google.com/p/byteplay/) library is required to compile this language, but once compiled it is not needed to run the PYC files. 
