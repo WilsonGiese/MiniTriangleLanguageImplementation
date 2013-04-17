@@ -5,7 +5,7 @@ Wilson Giese - giese.wilson@gmail.com
 About
 -----
 
-This is a compiler for the "MiniTriangle" language. MiniTriangle is a small language I used to become famailiar with the ideas of Programming Language implementation. This language is compiled to Python Bytecode, and the compiler will create fully executable ".pyc" files which will run on the Python stack machine. 
+This is a compiler for the "MiniTriangle" language. MiniTriangle is a small language I used to become famailiar with the ideas of Programming Language implementation. This language is compiled to Python Bytecode, and the compiler will create fully executable ".pyc" files which will run on the Python stack machine. See the [EBNF](https://github.com/WilsonGiese/MiniTriangleLanguageImplementation/blob/master/EBNF) for this verson of MiniTriangle grammar. 
 
 
 Features
