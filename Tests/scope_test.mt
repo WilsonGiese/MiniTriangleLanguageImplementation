@@ -1,4 +1,4 @@
-! Benson's scope test 
+! Small scope test 
 let
 	var x: Integer;
 	const c ~ 7; 
