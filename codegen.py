@@ -95,7 +95,6 @@ class CodeGen(object):
         # We also need to store all of these scopes for pyc generation
         self.code_stacks = []
         self.code_stacks.append(self.code)
-        # let_num will be used to name the let "functions"
         self.scope_depth = 0
         # We also need a list of environments for each scope(For typechecking and such)
         self.envs = []
